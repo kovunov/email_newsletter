@@ -1,4 +1,6 @@
-fn main() {
-    println!("Hello, world!");
-    println!("I'm a Rustacean!");
+use email_newsletter::run;
+
+#[tokio::main]
+async fn main() -> std::io::Result<()> {
+    run()?.await
 }
